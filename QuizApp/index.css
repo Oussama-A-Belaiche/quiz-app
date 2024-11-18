@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Quiz container */
+.quiz {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 20px;
+}
+
+#quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Options styling */
+.options {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+/* Selected option styles */
+.option.selected {
+    background-color: #90ee90; /* Light Green for correct answer */
+    border: 2px solid green;
+}
+
+.option.incorrect {
+    background-color: tomato; /* Red for incorrect answer */
+    border: 2px solid red;
+}
+
+/* Next button styling */
+.next {
+    margin-top: 20px;
+}
+
+#NextQuestion {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#NextQuestion:hover {
+    background-color: #45a049;
+}
+
+/* Degree section */
+.degree {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
